@@ -14,4 +14,9 @@ clf = tree.DecisionTreeClassifier()
 clf = clf.fit(features,labels)
 #input = features for new example
 # will print what classifier thinks the object is
-print (clf.predict([[160,0]]))
+#I predict it will print 1 for orange
+prediction = clf.predict([[160,0]])
+if(prediction == 0):
+	print("0 - apple")
+elif (prediction == 1):
+	print("1 - orange")
