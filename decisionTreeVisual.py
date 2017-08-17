@@ -34,8 +34,8 @@ test_data = iris.data[test_idx]
 clf = tree.DecisionTreeClassifier()
 clf.fit(train_data, train_target)
 
-print (test_target)
-print (clf.predict(test_data))
+print ("The answers are", test_target)
+print ("Classifier says",clf.predict(test_data))
 
 #visualization code
 #following video
@@ -54,3 +54,8 @@ tree.export_graphviz(clf,
 	impurity=False)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_pdf("iris.pdf")
+
+print ("Using the tree, follow the data to see how "
+	"classifier determines the answer")
+print ("The data is",test_data[2], test_target[2])
+print (iris.feature_names, iris.target_names)
