@@ -7,7 +7,8 @@ Pipelines for supervised learning
 		-We can start with a random model and then iteratly adjust them
 			-if classifier gets it right on data keep model, else if classifier's guess is wrong we modify the model
 -Take Away, one way to think of learning is to training data to adjust the parameters of a model
-http://playground.tensorflow.org
+http://playground.tensorflow.org 
+^play around with neural networks
 '''
 
 from sklearn import datasets
