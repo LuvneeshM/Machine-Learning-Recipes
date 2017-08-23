@@ -3,12 +3,18 @@ My own classifier from scratch :D
 ->Simplified version of KNearestNeighbors
 
 Building on previous code from pipeline.py
+Pros:
+-relatively simple to understand + replicate
+Cons:
+-Computation heavy since we iterate over every training point to make a prediction
+-Hard to represent relationship between features
 '''
 
 from scipy.spatial import distance #used for euclidean distance
 
 #a = pt from training data, b = pt from testing data
 def euc(a,b): 
+	#think of this like pythagorean theorem, but applies for all levels of dimensions
 	return distance.euclidean(a,b)
 
 #K-Nearest Neighbor Classifier
