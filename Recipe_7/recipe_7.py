@@ -26,4 +26,16 @@ data = data[:max_examples]
 labels = labels[:max_examples]
 
 #pring some of the test images using display
-display(0)
+#display(0)
+#display(6)
+
+#buld + train our classifier
+feature_columns = learn.infer_real_valued_columns_from_input(data)
+classifier = learn.LinearClassifier(n_classes=10, feature_columns=feature_columns)
+
+classifier = learn.SKCompat(classifier)
+
+classifier.fit(data, labels, batch_size=100, steps=1000)
+
+prediction = classifier.score(test_data, test_labels)
+print("Accuracy: %f" % prediction['accuracy'])

@@ -10,4 +10,4 @@ Following Google Deelopers Youtube Machine Learning Recipes [series](https://www
 	Episode 4: [=====>] 100%
 	Episode 5: [=====>] 100%
 	Episode 6: [=====>] 100%		
-	Episode 7: [===>..] 50%
+	Episode 7: [=====>] 100%
